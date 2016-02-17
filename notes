@@ -38,9 +38,27 @@ add devise
 rails generate devise:install
 rails generate devise USER
 
+add this to the migration
   # t.string   :unlock_token # Only if unlock strategy is :email or :both
   # t.datetime :locked_at
   t.string :customer_id # add me
 
   t.timestamps null: false
 end
+
+rails g devise:views
+
+rails generate model Project
+
+t.references  :user, index: true, foreign_key: true
+t.string   :name
+t.text     :short_description
+t.text     :description
+t.string   :image_url
+t.string   :status, default: "pending"
+t.decimal  :goal, precision: 8, scale: 2
+t.datetime :expiration_date
+t.timestamps null: false
+
+has_many :projects
+belongs_to :user
