@@ -47,6 +47,6 @@ end
 
 gem 'bootstrap-sass', '>= 3.3.6'#, '~> 3.3.6
 gem "font-awesome-rails"
-
 gem 'devise'
 gem 'annotate', github: 'ctran/annotate_models'
+gem 'simple_form'
