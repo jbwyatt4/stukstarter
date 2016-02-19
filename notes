@@ -62,3 +62,14 @@ t.timestamps null: false
 
 has_many :projects
 belongs_to :user
+
+add datetimepicker
+
+gem 'datetimepicker-rails', github: 'zpaulovics/datetimepicker-rails', branch: 'master', submodules: true
+gem 'momentjs-rails'
+ ./app/assets/js/application.js
+//= require moment
+//= require bootstrap-datetimepicker
+//= require pickers
+install with font awesome
+rails generate datetimepicker_rails:install Font-Awesome

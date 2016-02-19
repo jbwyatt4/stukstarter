@@ -6,6 +6,22 @@ GIT
       activerecord (>= 3.2, < 6.0)
       rake (~> 10.4)
 
+GIT
+  remote: git://github.com/nerian/bootstrap-wysihtml5-rails.git
+  revision: 53caf10e37eef291f3d4621de374263fcef45c21
+  specs:
+    bootstrap-wysihtml5-rails (0.3.3.8)
+      railties (>= 3.0)
+
+GIT
+  remote: git://github.com/zpaulovics/datetimepicker-rails.git
+  revision: 36d21cec5da7f5b214925804f60e63c61c747023
+  branch: master
+  submodules: true
+  specs:
+    datetimepicker-rails (4.7.16)
+      momentjs-rails (>= 2.9.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -64,6 +80,9 @@ GEM
       execjs
     coffee-script-source (1.10.0)
     concurrent-ruby (1.0.0)
+    date_validator (0.9.0)
+      activemodel
+      activesupport
     debug_inspector (0.0.2)
     devise (3.5.6)
       bcrypt (~> 3.0)
@@ -94,6 +113,8 @@ GEM
     mime-types (2.99)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
+    momentjs-rails (2.11.0)
+      railties (>= 3.1)
     multi_json (1.11.2)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
@@ -176,12 +197,16 @@ PLATFORMS
 DEPENDENCIES
   annotate!
   bootstrap-sass (>= 3.3.6)
+  bootstrap-wysihtml5-rails!
   byebug
   coffee-rails (~> 4.1.0)
+  date_validator
+  datetimepicker-rails!
   devise
   font-awesome-rails
   jbuilder (~> 2.0)
   jquery-rails
+  momentjs-rails
   rails (= 4.2.5.1)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
